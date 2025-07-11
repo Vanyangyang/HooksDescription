@@ -49,12 +49,17 @@ chmod +x .claude/hooks/*.sh
 ```
 #### 备选方案：使用/hooks 指令自行添加
 
-### 步骤5：修改路径
+### 步骤4：修改“步骤三”新增配置的路径
+
+    "command": "/mnt/你的盘符/你的项目路径/.claude/hooks/notify-interaction.sh"
+
+    "command": "/mnt/你的盘符/你的项目路径/.claude/hooks/notify-completion.sh"
+    
 将配置文件中的路径修改为你的实际项目路径：
 
 **路径格式**：`/mnt/盘符/项目路径/.claude/hooks/脚本名.sh`
 
-### 步骤6：重启 Claude Code
+### 步骤5：重启 Claude Code
 重新启动 Claude Code，钩子即生效！
 
 ## 💡 效果说明
