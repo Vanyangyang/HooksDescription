@@ -1,24 +1,22 @@
 # Claude Code 通知 Hooks 简单配置教程
 
+## 功能简介
+
+可以在claudecode需要用户授权以及claudecode完成对话的时候,通过 Windows右下角通知弹窗与通用提示音提醒用户。
+
 ## 🚀 5分钟快速配置
 
-### 步骤1：创建目录
-在你的项目根目录下：
-```bash
-mkdir -p .claude/hooks
-```
-
-### 步骤2：下载脚本文件
-从 GitHub 下载以下两个文件到 `.claude/hooks/` 目录：
+### 步骤1：下载脚本文件
+从 GitHub 下载以下两个文件到 `.claude/hooks/` 目录（或者随便什么你觉得合适的位置，如果更换位置，readme后面相关指令记得替换）：
 - `notify-interaction.sh`
 - `notify-completion.sh`
 
-### 步骤3：赋予执行权限（如遇权限问题，可选）
+### 步骤2：赋予执行权限（如遇权限问题，可选）
 ```bash
 chmod +x .claude/hooks/*.sh
 ```
 
-### 步骤4：创建配置文件
+### 步骤3：创建配置文件
 在项目根目录项目级配置文件中修改 `.claude/settings.local.json`：
 ```json
 {
