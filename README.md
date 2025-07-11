@@ -17,7 +17,7 @@ chmod +x .claude/hooks/*.sh
 ```
 
 ### 步骤3：创建配置文件
-在项目根目录项目级配置文件中修改 `.claude/settings.local.json`：
+在项目根目录项目级（或者全局）配置文件中修改 `.claude/settings.local.json`：
 ```json
 {
   "hooks": {
