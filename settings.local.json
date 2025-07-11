@@ -90,46 +90,6 @@
         ]
       }
     ],
-    "PreToolUse": [
-      {
-        "matcher": "TodoWrite",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/mnt/g/u2dProject/u6project/VESPERIX/.claude/hooks/task-workflow-pretool.sh"
-          }
-        ]
-      },
-      {
-        "matcher": "Task",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/mnt/g/u2dProject/u6project/VESPERIX/.claude/hooks/task-tool-pretool.sh"
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "matcher": "Write|Edit|MultiEdit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/mnt/g/u2dProject/u6project/VESPERIX/.claude/hooks/compile-check-posttool.sh"
-          }
-        ]
-      },
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/mnt/g/u2dProject/u6project/VESPERIX/.claude/hooks/task-created-posttool.sh"
-          }
-        ]
-      }
-    ],
     "Stop": [
       {
         "matcher": "",
